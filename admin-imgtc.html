@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ImgTC | Admin</title>
   <!-- Import CSS -->
-  <link rel="stylesheet" href="https://cf-proxy.xn--dqrua927cjta52jzxn.site/proxy/https://cdn.jsdelivr.net/npm/element-ui@2.15.3/lib/theme-chalk/index.css">
-  <link rel="stylesheet" href="https://cf-proxy.xn--dqrua927cjta52jzxn.site/proxy/https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
-  <!-- <script src="https://cf-proxy.xn--dqrua927cjta52jzxn.site/proxy/https://js.sentry-cdn.com/219f636ac7bde5edab2c3e16885cb535.min.js" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="/cdn.jsdelivr.net/npm/element-ui@2.15.3/lib/theme-chalk/index.css">
+  <link rel="stylesheet" href="/cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+  <!-- <script src="https://js.sentry-cdn.com/219f636ac7bde5edab2c3e16885cb535.min.js" crossorigin="anonymous"></script> -->
   <style>
     body {
       background: linear-gradient(90deg, #ffd7e4 0%, #c8f1ff 100%);
@@ -300,9 +300,9 @@
   </div>
 
   <!-- Import Vue before Element -->
-  <script src="https://cf-proxy.xn--dqrua927cjta52jzxn.site/proxy/https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+  <script src="/cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
   <!-- Import JavaScript -->
-  <script src="https://cf-proxy.xn--dqrua927cjta52jzxn.site/proxy/https://cdn.jsdelivr.net/npm/element-ui@2.15.3/lib/index.js"></script>
+  <script src="/cdn.jsdelivr.net/npm/element-ui@2.15.3/lib/index.js"></script>
   <script>
     new Vue({
       el: '#app',
@@ -404,7 +404,7 @@
           this.$message.success('批量复制链接成功~');
         },
         handleLogout() {
-          window.location.href = '/';
+          window.location.href = './api/manage/logout';
         },
         handleCopy(index, key) {
           const text = `${document.location.origin}/file/${key}`;

@@ -62,7 +62,7 @@
   </div>
   <!-- 放大遮罩层 -->
     <div id="bigimg" onclick="closeBigImg();"></div>
-<script src="https://cf-proxy.xn--dqrua927cjta52jzxn.site/proxy/https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+<script src="/cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
 <script>
   var imgList
   $.ajax({
@@ -127,10 +127,10 @@
 	bigImg.innerHTML = '<img src="' + imgUrl + '">';
 	bigImg.style.display = 'block';
 	// 获取屏幕的宽度和高度
-	//var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-	//var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-	//bigImg.style.maxWidth = screenWidth * 0.9 + 'px';
-	//bigImg.style.maxHeight = screenHeight * 0.9 + 'px';
+	var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+	var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+	bigImg.style.maxWidth = screenWidth * 0.9 + 'px';
+	bigImg.style.maxHeight = screenHeight * 0.9 + 'px';
 }
 
 function closeBigImg() {
